@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .face {
+            width: 500px;
+            height: 500px;
+            border: 1px solid #000;
+            background: #000;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .nose {
+            width: 200px;
+            height: 150px;
+            border: 1px solid #000;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0px;
+            left: 0;
+            margin: auto;
+        }
+
+        .mouse {
+            width: 100px;
+            height: 50px;
+            border: 1px solid #000;
+            background: #000;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: -30px;
+            left: 0;
+            margin: auto;
+        }
+
+        .nose1 {
+            width: 35px;
+            height: 25px;
+            border: 1px solid #000;
+            background: #000;
+            border-radius: 50%;
+            position: absolute;
+            top: -100px;
+            right: 0;
+            bottom: 0px;
+            left: 0;
+            margin: auto;
+        }
+
+        .eye {
+            width: 75px;
+            height: 75px;
+            border: 1px solid #000000;
+            background: #000000;
+            border-radius: 50%;
+            position: absolute;
+            top: -250px;
+            right: 0px;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .eye::after {
+            content: '';
+            width: 75px;
+            height: 75px;
+            border: 1px solid #fff;
+            background: rgb(255, 255, 255);
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            right: -200px;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .eye::before {
+            content: '';
+            width: 75px;
+            height: 75px;
+            border: 1px solid #fff;
+            background: rgb(255, 255, 255);
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0;
+            left: -200px;
+            margin: auto;
+        }
+
+        .s-eye {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #000000;
+            background: #000000;
+            border-radius: 50%;
+            position: absolute;
+            top: -250px;
+            right: 0px;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .s-eye::before {
+            content: '';
+            width: 50px;
+            height: 50px;
+            border: 1px solid #fff;
+            background: rgb(0, 0, 0);
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0;
+            left: -200px;
+            margin: auto;
+        }
+
+        .s-eye::after {
+            content: '';
+            width: 50px;
+            height: 50px;
+            border: 1px solid #fff;
+            background: rgb(0, 0, 0);
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            right: -200px;
+            bottom: 0;
+            left: 0px;
+            margin: auto;
+        }
+
+        .red {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: rgba(255, 0, 0, 0);
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .red::before {
+            content: '';
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: red;
+            position: absolute;
+            top: 0;
+            right: -400px;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .red::after {
+            content: '';
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: red;
+            position: absolute;
+            top: 0;
+            right: 0px;
+            bottom: 0;
+            left: -400px;
+            margin: auto;
+        }
+
+        .ear {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0);
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .ear::before {
+            content: '';
+            width: 95px;
+            height: 95px;
+            border-radius: 50%;
+            background: rgb(0, 0, 0);
+            position: absolute;
+            top: -450px;
+            right: -300px;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .ear::after {
+            content: '';
+            width: 95px;
+            height: 95px;
+            border-radius: 50%;
+            background: rgb(0, 0, 0);
+            position: absolute;
+            top: -450px;
+            right: 0px;
+            bottom: 0;
+            left: -300px;
+            margin: auto;
+        }
+
+        .ear1 {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background: #fefefe00;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .ear1::before {
+            content: '';
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background: #fefefe;
+            position: absolute;
+            top: -450px;
+            right: -300px;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .ear1::after {
+            content: '';
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background: #fefefe;
+            position: absolute;
+            top: -450px;
+            right: 0px;
+            bottom: 0;
+            left: -300px;
+            margin: auto;
+        }
+
+        .chest {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 150px 150px 0 150px;
+            border-color: #ffffff transparent transparent transparent;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: -350px;
+            left: 0;
+            margin: auto;
+        }
+        .chest::before{
+            content:'';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 75px 75px 0 75px;
+            border-color: #000000 transparent transparent transparent;
+            position: absolute;
+            top: -175px;
+            right: px;
+            bottom: px;
+            left: -75px;
+            margin: auto;
+        }
+        .chest::after{
+            content:'';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 75px 75px 0 75px;
+            border-color: #000000 transparent transparent transparent;
+            position: absolute;
+            top: -74px;
+            right: px;
+            bottom: px;
+            left: -75px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="face"></div>
+    <div class="nose"></div>
+    <div class="mouse"></div>
+    <div class="nose1"></div>
+    <div class="eye"></div>
+    <div class="s-eye"></div>
+    <div class="red"></div>
+    <div class="ear"></div>
+    <div class="ear1"></div>
+    <div class="chest"></div>
+</body>
+
+</html>
